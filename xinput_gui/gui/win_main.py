@@ -32,6 +32,9 @@ from .log import Log
 from .prop_list import PropList
 from .win_settings import SettingsWindow
 
+from pkg_resources import resource_filename
+import os
+
 if TYPE_CHECKING:
     from ..view_controller import ViewController
 
@@ -54,6 +57,12 @@ class MainWindow:
         builder.connect_signals(MainWindow.SignalHandler(self))
 
         self.win_main = builder.get_object('win_main')
+
+        '''Estas tres líneas son para establecer el icono'''
+        icon_path = resource_filename('xinput_gui', 'share/pixmaps/xinput-gui.png')
+    if os.path.exists(icon_path):
+        self.win_main.set_icon_from_file(icon_path)
+
         self.box_editor = builder.get_object('box_stack_editor')
         self.box_log = builder.get_object('box_stack_log')
 

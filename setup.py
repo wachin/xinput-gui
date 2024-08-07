@@ -8,6 +8,7 @@ setup(
     name='xinput-gui',
     version='0.3.1',
     description='A simple GUI for Xorg\'s Xinput tool.',
+    data_files=data_files,
     long_description=long_description,
     long_description_content_type='text/markdown',
     author='Ivan Fonseca',
@@ -36,6 +37,11 @@ setup(
         'xinput_gui/xinput'
     ],
     install_requires=['PyGObject'],
-    package_data={'xinput_gui': ['res/*']},
+    package_data={'xinput_gui': ['res/*', 'share/applications/*', 'share/pixmaps/*']},
     entry_points={'gui_scripts': ['xinput-gui = xinput_gui.__main__:main']}
 )
+
+data_files = [
+    ('share/applications', ['share/applications/xinput-gui.desktop']),
+    ('share/pixmaps', ['share/pixmaps/xinput-gui.png']),
+]
