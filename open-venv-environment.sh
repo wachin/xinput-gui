@@ -38,13 +38,13 @@ konsole --noclose -e bash -c '
     echo "Entorno virtual activado."
 
     # Anuncia que se va a ejecutar el script de Python
-    echo "Ejecutando test_venv.py..."
+    echo "Ejecutando venv/bin/xinput-gui"
 
     # Ejecuta el script de Python
-    python3 test_venv.py
+    venv/bin/xinput-gui
 
     # Confirma que el script ha terminado de ejecutarse
-    echo "Ejecución de test_venv.py completada."
+    echo "Ejecución de venv/bin/xinput-gui completada."
 
     # Deja una línea en blanco para mejor legibilidad
     echo ""
@@ -72,4 +72,4 @@ konsole --noclose -e bash -c '
 
     # Usa qdbus para enviar un comando de cierre a la ventana de Konsole
     qdbus org.kde.konsole-$konsole_pid /konsole/MainWindow_1 org.qtproject.Qt.QWidget.close
-' -p tabtitle=PFSLE  # Establece el título de la pestaña como "PFSLE"
+' -p tabtitle=xinput-gui  # Establece el título de la pestaña como "xinput-gui"
