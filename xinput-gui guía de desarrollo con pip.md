@@ -95,9 +95,20 @@ además les recomiendo leer el siguiente tutorial:
 
    > Nota: Este directorio no está en el `PATH` del sistema de forma predeterminada, por lo que el comando `xinput-gui` no funciona globalmente fuera del entorno virtual.
 
+6. **Activar siempre el entorno virtual para ejecutar xinput-gui**
+   Cada vez que quieras usar el programa en modo de desarrollo con pip, activa el entorno virtual abriendo la carpeta del programa pues allí fue creado, y ejecuta, "source venv/bin/activate" y luego "venv/bin/xinput-gui", por todo lo que debes hacer es:
+   ```bash
+   cd xinput-gui
+   source venv/bin/activate
+   venv/bin/xinput-gui
+   ```
 
-6. **script para activar venv y ejecutar xinput-gui**
-   He dejado en este repositorio el script: open-venv-environment.sh por si lo deseas usar, este automáticamente activará venv
+7. **script para activar venv y ejecutar xinput-gui**
+   El script necesita para funcionar Konsole. El script es para facilitar el paso "6." anterior, se llama:
+
+   open-venv-environment.sh
+
+   por si lo deseas usar, verifica la primera vez con clic derecho en la pestaña "Permisos" que esté como "Ejecutable" y dale doble clic, este automáticamente activará venv y ejecutará xinput-gui para que lo uses rapidamente, y quedará abierta la terminal Konsolo esperando tus instrucciones para cerrarlo.
 
 ---
 
