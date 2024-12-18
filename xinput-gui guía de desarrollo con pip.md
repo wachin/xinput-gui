@@ -17,7 +17,10 @@ Lo siguiente ha sido testeado en Debian 12
 necesitas las siguientes dependencias:
 
 ```
-sudo apt install python3 python3-pip python3.*-venv pkg-config libcairo2-dev build-essential pkg-config python3-dev libglib2.0-dev xinput python3-setuptools libgirepository1.0-dev gir1.2-gtk-3.0
+sudo apt install python3 python3-pip python3.*-venv pkg-config \
+	libcairo2-dev build-essential pkg-config python3-dev \
+	libglib2.0-dev xinput python3-setuptools \
+	libgirepository1.0-dev gir1.2-gtk-3.0
 ``` 
 
 
