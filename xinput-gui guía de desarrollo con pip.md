@@ -17,8 +17,8 @@ Lo siguiente ha sido testeado en Debian 12
 necesitas las siguientes dependencias:
 
 ```
-sudo apt install python3 python3-pip python3.*-venv
-```
+sudo apt install python3 python3-pip python3.*-venv pkg-config libcairo2-dev
+``` 
 
 además les recomiendo leer el siguiente tutorial:  
 
