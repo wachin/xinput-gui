@@ -17,8 +17,10 @@ Lo siguiente ha sido testeado en Debian 12
 necesitas las siguientes dependencias:
 
 ```
-sudo apt install python3 python3-pip python3.*-venv pkg-config libcairo2-dev
+sudo apt install python3 python3-pip python3.*-venv pkg-config libcairo2-dev build-essential pkg-config python3-dev libglib2.0-dev xinput python3-setuptools libgirepository1.0-dev gir1.2-gtk-3.0
 ``` 
+
+
 
 además les recomiendo leer el siguiente tutorial:  
 
@@ -146,3 +148,32 @@ pip uninstall xinput-gui
 Para desarrollo, lo más limpio es activar siempre el entorno virtual y trabajar desde allí. Esto evita conflictos con otros programas o bibliotecas de Python.
 
 Dios te bendiga 😊 😊
+
+
+
+
+
+
+El error que estás viendo parece estar relacionado con la falta de algunas dependencias necesarias para compilar `pycairo`, que es una de las dependencias de `PyGObject`. Específicamente, el error indica que no se pudo encontrar la dependencia de Python.
+
+Para resolver este problema, asegúrate de tener instaladas las siguientes dependencias en tu sistema. Puedes hacerlo ejecutando el siguiente comando en la terminal:
+
+```bash
+sudo apt install build-essential pkg-config python3-dev libglib2.0-dev libcairo2-dev
+```
+
+Aquí hay una breve descripción de cada paquete:
+
+- `build-essential`: proporciona herramientas necesarias para compilar software en C/C++.
+- `pkg-config`: ayuda a gestionar las bibliotecas y sus ubicaciones.
+- `python3-dev`: incluye archivos de desarrollo necesarios para compilar extensiones de Python.
+- `libglib2.0-dev`: proporciona las bibliotecas de desarrollo para GLib, que es una biblioteca fundamental para muchas aplicaciones de GNOME.
+- `libcairo2-dev`: incluye los archivos de desarrollo para Cairo, que es una biblioteca de gráficos.
+
+Después de instalar esas dependencias, intenta nuevamente ejecutar:
+
+```bash
+pip install -e .
+```
+
+Esto debería permitir que `pycairo` y, por lo tanto, `PyGObject` se instalen correctamente. Si sigues teniendo problemas, por favor proporciona el nuevo mensaje de error.
