@@ -98,29 +98,34 @@ además les recomiendo leer el siguiente tutorial:
    Esto instalará el proyecto en modo editable. El punto `.` se refiere al directorio actual (la raíz del proyecto).
 
 5. **Prueba ejecutar el programa**
-   Ahora puedes ejecutar el programa desde cualquier lugar en el entorno virtual simplemente escribiendo:
+   Ahora puedes ejecutar el programa en el entorno virtual simplemente escribiendo:
 
    ```bash
    venv/bin/xinput-gui
    ```
-   Si tienes curiosidad, en el administrador de archivos entra en la nueva carpeta venv y allí entra a la carpeta bin y allí verás al ejecutable xinput-gui por eso funciona.
+   
+**Nota:** Recuerda que debes estar en el entorno virtual para poder ejecutarlo.
 
-   > Nota: Este directorio no está en el `PATH` del sistema de forma predeterminada, por lo que el comando `xinput-gui` no funciona globalmente fuera del entorno virtual.
+   Si tienes curiosidad, en el administrador de archivos entra en la nueva carpeta venv y allí entra a la carpeta bin y allí dentro verás al ejecutable xinput-gui y por eso funciona.
+
+**Nota:** Este directorio no está en el `PATH` del sistema de forma predeterminada, por lo que el comando `xinput-gui` no funciona globalmente fuera del entorno virtual.
 
 6. **Activar siempre el entorno virtual para ejecutar xinput-gui**
-   Cada vez que quieras usar el programa en modo de desarrollo con pip, activa el entorno virtual abriendo la carpeta del programa pues allí fue creado, y ejecuta, "source venv/bin/activate" y luego "venv/bin/xinput-gui", por todo lo que debes hacer es:
+   Cada vez que quieras usar el programa en modo de desarrollo con pip, activa el entorno virtual abriendo la carpeta del programa pues allí fue creado, y ejecuta, "source venv/bin/activate" y luego "venv/bin/xinput-gui". Por todo lo que debes hacer es:
    ```bash
    cd xinput-gui
    source venv/bin/activate
    venv/bin/xinput-gui
    ```
 
-7. **script para activar venv y ejecutar xinput-gui**
-   El script necesita para funcionar Konsole. El script es para facilitar el paso "6." anterior, se llama:
+7. **script para activar venv y ejecutar xinput-gui con Konsole**
+Le proporcioniono un script llamado: 
 
    open-venv-environment.sh
+   
+necesita para funcionar Konsole. El script es para facilitar el paso "6." anterior
 
-   por si lo deseas usar, verifica la primera vez con clic derecho en la pestaña "Permisos" que esté como "Ejecutable" y dale doble clic, este automáticamente activará venv y ejecutará xinput-gui para que lo uses rapidamente, y quedará abierta la terminal Konsolo esperando tus instrucciones para cerrarlo.
+Para usarlo verifica la primera vez con clic derecho en la pestaña "Permisos" que esté como "Ejecutable" y dale doble clic, este automáticamente activará venv y ejecutará xinput-gui para que lo uses rapidamente, y quedará abierta la terminal Konsolo esperando tus instrucciones para cerrarlo.
 
 ---
 
