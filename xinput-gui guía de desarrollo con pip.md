@@ -95,7 +95,7 @@ además les recomiendo leer el siguiente tutorial:
    pip install -e .
    ```
 
-   Esto instalará el proyecto en modo editable. El punto `.` se refiere al directorio actual (la raíz del proyecto).
+   Esto instalará el proyecto en modo editable. El punto `.` se refiere al directorio actual (la raíz del proyecto)
 
 5. **Prueba ejecutar el programa**
    Ahora puedes ejecutar el programa en el entorno virtual simplemente escribiendo:
@@ -119,13 +119,24 @@ además les recomiendo leer el siguiente tutorial:
    ```
 
 7. **script para activar venv y ejecutar xinput-gui con Konsole**
-Le proporcioniono un script llamado: 
+Les proporciono un script llamado: 
 
-   open-venv-environment.sh
+   open-venv-konsole.sh
    
-necesita para funcionar Konsole. El script es para facilitar el paso "6." anterior
+necesita para funcionar **Konsole**. Es un script para facilitar el paso "6." anterior
 
-Para usarlo verifica la primera vez con clic derecho en la pestaña "Permisos" que esté como "Ejecutable" y dale doble clic, este automáticamente activará venv y ejecutará xinput-gui para que lo uses rapidamente, y quedará abierta la terminal Konsolo esperando tus instrucciones para cerrarlo.
+Para usarlo verifica la primera vez con clic derecho en la pestaña **"Permisos"** que esté como **"Ejecutable"** si está así dale doble clic al script, este automáticamente activará venv y ejecutará xinput-gui para que lo uses rapidamente, y quedará abierta la terminal **Konsole** esperando tus instrucciones para cerrarlo.
+
+---
+
+8. **script para activar venv y ejecutar xinput-gui con xfce4-terminal**
+Les proporciono un script llamado: 
+
+   open-venv-xfce4-terminal.sh
+   
+necesita para funcionar **xfce4-terminal**. Es un script para facilitar el paso "6." anterior
+
+Para usarlo verifica la primera vez con clic derecho en la pestaña **"Permisos"** que esté como **"Ejecutable"** si está así dale doble clic al script, este automáticamente activará venv y ejecutará xinput-gui para que lo uses rapidamente, y quedará abierta la terminal **xfce4-terminal** esperando tus instrucciones para cerrarlo.
 
 ---
 
@@ -134,12 +145,12 @@ Para usarlo verifica la primera vez con clic derecho en la pestaña "Permisos" q
    Por ejemplo, si deseas modificar `xinput_gui/gui/dialog_about.py`, abre el archivo con tu editor de texto o IDE:
 
    ```bash
-   nano xinput_gui/gui/dialog_about.py
+   geany xinput_gui/gui/dialog_about.py
    ```
 
    Realiza tus cambios y guarda el archivo.
    
-   >**Nota**: Puedes usar otro editor de textos, ejemplo gedit, Kate, Geany, Featherpad, etc, etc, o IDLE, etc
+   >**Nota**: Puedes usar otro editor de textos, ejemplo gedit, Kate, Geany, Featherpad, etc, etc, o IDLE, Pyzo, etc
 
 2. **Ejecuta el programa para probar**
    Los cambios que hagas se aplicarán de inmediato porque la instalación en modo editable apunta al código fuente en tu proyecto. Simplemente ejecuta el programa como antes:
@@ -160,6 +171,6 @@ pip uninstall xinput-gui
 ---
 
 ### Recomendación
-Para desarrollo, lo más limpio es activar siempre el entorno virtual y trabajar desde allí. Esto evita conflictos con otros programas o bibliotecas de Python.
+Activa siempre el entorno virtual y trabaja desde allí
 
 Dios te bendiga 😊 😊
