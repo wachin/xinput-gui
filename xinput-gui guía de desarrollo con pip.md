@@ -25,14 +25,31 @@ sudo apt install python3 python3-pip python3.*-venv pkg-config \
 
 Breve descripción de algunos paquetes:
 
-- `build-essential`: proporciona herramientas necesarias para compilar software en C/C++.
-- `pkg-config`: ayuda a gestionar las bibliotecas y sus ubicaciones.
-- `python3-dev`: incluye archivos de desarrollo necesarios para compilar extensiones de Python.
-- `libglib2.0-dev`: proporciona las bibliotecas de desarrollo para GLib, que es una biblioteca fundamental para muchas aplicaciones de GNOME.
-- `libcairo2-dev`: incluye los archivos de desarrollo para Cairo, que es una biblioteca de gráficos.
+- **`build-essential`**: proporciona herramientas necesarias para compilar software en C/C++.
 
+- **`pkg-config`**: ayuda a gestionar las bibliotecas y sus ubicaciones.
 
-además les recomiendo leer el siguiente tutorial:  
+- **`python3-dev`**: incluye archivos de desarrollo necesarios para compilar extensiones de Python.
+
+- **`libglib2.0-dev`**: proporciona las bibliotecas de desarrollo para GLib, que es una biblioteca fundamental para muchas aplicaciones de GNOME.
+
+- **`libcairo2-dev`**: incluye los archivos de desarrollo para Cairo, que es una biblioteca de gráficos.
+
+- **`python3-pip`**: Es el administrador de paquetes para Python. Permite instalar y gestionar librerías y dependencias de Python desde el índice de paquetes de Python (PyPI).
+  
+- **`python3.*-venv`**: Este paquete proporciona herramientas para crear entornos virtuales en Python. Los entornos virtuales permiten aislar dependencias de proyectos específicos, lo que facilita la gestión de diferentes versiones de bibliotecas y paquetes.
+  
+- **`libgirepository1.0-dev`**: Este paquete proporciona los archivos necesarios para trabajar con GObject Introspection, una herramienta que genera enlaces para diversas bibliotecas en lenguajes como Python, Ruby y otros, permitiendo que las aplicaciones accedan a bibliotecas escritas en C.
+
+- **`gir1.2-gtk-3.0`**: Contiene los archivos necesarios para usar la biblioteca GTK+ 3 (GIMP Toolkit) en Python u otros lenguajes mediante GObject Introspection. GTK+ es una biblioteca de interfaz gráfica para crear aplicaciones de escritorio.
+
+- **`xinput`**: Esta es una herramienta de línea de comandos utilizada para configurar y administrar dispositivos de entrada en X (como ratones, teclados, tabletas, etc.). Permite ajustar las configuraciones de estos dispositivos en sistemas que usan el servidor gráfico X.
+
+- **`python3-setuptools`**: Este paquete incluye herramientas para gestionar la instalación de paquetes en Python, especialmente para facilitar la creación y distribución de paquetes. También es útil para instalar y gestionar dependencias dentro de entornos virtuales.
+
+Estas dependencias son esenciales para que el programa `xinput-gui` funcione correctamente, ya que abarcan desde la gestión de entornos y paquetes de Python hasta la manipulación de dispositivos de entrada y la creación de interfaces gráficas.
+
+Además les recomiendo leer el siguiente tutorial:  
 
 **pip no me deja instalar paquetes de python en Debian 12 OK.md**  
 [https://github.com/wachin/Facilitar-el-Software-Libre/tree/main/Tutoriales/pip/pip%20no%20me%20deja%20instalar%20paquetes%20de%20python%20en%20Debian%2012](https://github.com/wachin/Facilitar-el-Software-Libre/tree/main/Tutoriales/pip/pip%20no%20me%20deja%20instalar%20paquetes%20de%20python%20en%20Debian%2012)
