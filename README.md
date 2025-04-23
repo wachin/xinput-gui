@@ -80,5 +80,9 @@ Para que xinput-gui se ejecute automáticamente al iniciar el sistema:
 ---
 
 ### **Notas adicionales**  
-1. Actualmente, xinput-gui no incluye un ícono ni un lanzador `.desktop`. Si desea personalizarlo, puede consultar recursos sobre cómo crear iconos y archivos `.desktop`.  
+1. Actualmente, xinput-gui no incluye un ícono ni un lanzador `.desktop`. Ultimamente estoy estudiando la manera de cómo ponerle un icono al programa y he hecho una guía para el desarrollo:
+
+[xinput-gui guía de desarrollo con pip.md](https://github.com/wachin/xinput-gui/blob/master/xinput-gui%20gu%C3%ADa%20de%20desarrollo%20con%20pip.md)
+
+
 2. Cuando conecte o desconecte dispositivos, asegúrese de actualizar la lista de dispositivos en xinput-gui seleccionando nuevamente el dispositivo en el apartado "Virtual Core Pointer".  
